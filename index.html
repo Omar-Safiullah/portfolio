@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Safiullah | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0f172a',
+                        card: '#1e293b',
+                        accent: '#38bdf8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+
+        .card-hover {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.15);
+            border-color: #38bdf8;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-slate-300 antialiased selection:bg-accent selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-dark/90 backdrop-blur-sm z-50 border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-white tracking-tight">OS<span class="text-accent">.</span></a>
+            <div class="space-x-6 text-sm font-medium hidden sm:block">
+                <a href="#about" class="hover:text-accent transition-colors">About</a>
+                <a href="#experience" class="hover:text-accent transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-accent transition-colors">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="about" class="pt-32 pb-20 px-6 max-w-5xl mx-auto">
+        <div class="max-w-3xl">
+            <p class="text-accent font-medium mb-4 tracking-wide">Hi, my name is</p>
+            <h1 class="text-5xl sm:text-7xl font-bold text-white mb-6 tracking-tight">Omar Safiullah.</h1>
+            <h2 class="text-3xl sm:text-5xl font-bold text-slate-400 mb-8">I build intelligent software solutions.</h2>
+            <p class="text-lg text-slate-400 mb-10 leading-relaxed max-w-2xl">
+                I'm a Computer Science student at Ontario Tech University passionate about Artificial
+                Intelligence, backend development, and building tools that solve complex problems.
+            </p>
+
+            <div class="flex flex-wrap gap-4 items-center mb-12">
+                <a href="mailto:omarsafiullah789@gmail.com"
+                    class="bg-accent/10 text-accent border border-accent px-6 py-3 rounded-md font-medium hover:bg-accent hover:text-dark transition-colors flex items-center gap-2">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+                <a href="https://www.linkedin.com/in/omar-safiullah-1132b2295/"
+                    class="text-slate-300 hover:text-white transition-colors p-3" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="https://github.com/omar-safiullah"
+                    class="text-slate-300 hover:text-white transition-colors p-3" aria-label="GitHub">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+            </div>
+
+            <!-- Skills -->
+            <div class="flex flex-wrap gap-3">
+                <span
+                    class="bg-slate-800 text-slate-200 px-3 py-1 rounded-full text-sm font-medium border border-slate-700">Python</span>
+                <span
+                    class="bg-slate-800 text-slate-200 px-3 py-1 rounded-full text-sm font-medium border border-slate-700">Java</span>
+                <span
+                    class="bg-slate-800 text-slate-200 px-3 py-1 rounded-full text-sm font-medium border border-slate-700">HTML
+                    & CSS</span>
+                <span
+                    class="bg-slate-800 text-slate-200 px-3 py-1 rounded-full text-sm font-medium border border-slate-700">Linux
+                </span>
+                <span
+                    class="bg-slate-800 text-slate-200 px-3 py-1 rounded-full text-sm font-medium border border-slate-700">C++</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-6 max-w-5xl mx-auto border-t border-slate-800">
+        <div class="flex items-center gap-4 mb-12">
+            <h2 class="text-3xl font-bold text-white">Experience</h2>
+            <div class="h-px bg-slate-700 flex-grow max-w-xs"></div>
+        </div>
+
+        <div class="space-y-8">
+            <!-- Job 1 -->
+            <div class="grid sm:grid-cols-[1fr_3fr] gap-4 sm:gap-8 group">
+                <div class="text-slate-400 text-sm font-medium mt-1 uppercase tracking-wider">
+                    Sep 2025 - Nov 2025
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-accent transition-colors">Digital Marketing
+                        & Automation Project Consultant</h3>
+                    <ul class="space-y-3 text-slate-400 list-disc list-outside ml-4 marker:text-accent mt-4">
+                        <li>Creating audience segmentation for targeted communication</li>
+                        <li>Building automated workflows to streamline partner outreach</li>
+                        <li>Organizing and structuring contact lists to support CRM</li>
+                        <li>Improving communication strategy for retail partners</li>
+                        <li>Delivering a detailed report with recommendations for future optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="grid sm:grid-cols-[1fr_3fr] gap-4 sm:gap-8 group">
+                <div class="text-slate-400 text-sm font-medium mt-1 uppercase tracking-wider">
+                    Feb 2025 - March 2025
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-accent transition-colors">Business Research
+                        Associate (Feasibility Analyst)</h3>
+                    <ul class="space-y-3 text-slate-400 list-disc list-outside ml-4 marker:text-accent mt-4">
+                        <li>Conducted market research and competitive analysis for a national MDF manufacturing
+                            feasibility study.</li>
+                        <li>Completed cost, supply chain, and operations assessments to evaluate domestic production
+                            viability.</li>
+                        <li>Reviewed regulatory factors and potential facility locations across Canada.</li>
+                        <li>Contributed to the final feasibility report and executive presentation for leadership
+                            decision-making.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 max-w-5xl mx-auto border-t border-slate-800">
+        <div class="flex items-center gap-4 mb-12">
+            <h2 class="text-3xl font-bold text-white">Projects</h2>
+            <div class="h-px bg-slate-700 flex-grow max-w-xs"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Project 1 -->
+            <div class="card bg-card p-8 rounded-xl border border-slate-800 card-hover flex flex-col h-full">
+                <div class="flex justify-between items-start mb-6">
+                    <i class="fas fa-chart-line text-3xl text-accent"></i>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors"><i
+                            class="fab fa-github text-xl"></i></a>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Automated Intraday Crypto Trading System</h3>
+                <p class="text-slate-400 mb-6 flex-grow">
+                    Full-stack automated trading system integrating LSTM, Random Forest, and ARIMA models for
+                    high-accuracy price predictions. Features ATR and RSI-based risk management and robust real-time
+                    data pipelines.
+                </p>
+                <div class="flex flex-wrap gap-3 mt-auto text-sm font-mono text-accent">
+                    <span>Python</span>
+                    <span>Machine Learning</span>
+                    <span>Data Pipelines</span>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card bg-card p-8 rounded-xl border border-slate-800 card-hover flex flex-col h-full">
+                <div class="flex justify-between items-start mb-6">
+                    <i class="fas fa-brain text-3xl text-accent"></i>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors"><i
+                            class="fab fa-github text-xl"></i></a>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">AI-Driven Learning Solution</h3>
+                <p class="text-slate-400 mb-6 flex-grow">
+                    Designed and researched an AI-driven platform prototype to enhance personalized learning and
+                    streamline educational processes. Successfully presented the solution to project judges.
+                </p>
+                <div class="flex flex-wrap gap-3 mt-auto text-sm font-mono text-accent">
+                    <span>AI Integration</span>
+                    <span>Prototyping</span>
+                    <span>Research</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-6 max-w-5xl mx-auto border-t border-slate-800">
+        <div class="flex items-center gap-4 mb-12">
+            <h2 class="text-3xl font-bold text-white">Education</h2>
+            <div class="h-px bg-slate-700 flex-grow max-w-xs"></div>
+        </div>
+
+        <div class="space-y-8">
+            <div
+                class="bg-card p-6 rounded-lg border border-slate-800 flex flex-col sm:flex-row justify-between sm:items-center gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-white">Ontario Tech University</h3>
+                    <p class="text-accent mt-1">Bachelor of Computer Science</p>
+                </div>
+                <div
+                    class="text-slate-400 text-sm font-mono bg-slate-900 px-3 py-1 rounded border border-slate-700 inline-block">
+                    Sep 2024 - Present
+                </div>
+            </div>
+
+            <div
+                class="bg-card p-6 rounded-lg border border-slate-800 flex flex-col sm:flex-row justify-between sm:items-center gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-white">Marc Garneau Collegiate Institute</h3>
+                    <p class="text-slate-400 mt-1">High School Diploma</p>
+                </div>
+                <div
+                    class="text-slate-400 text-sm font-mono bg-slate-900 px-3 py-1 rounded border border-slate-700 inline-block">
+                    Graduated 06/2024
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center border-t border-slate-800 mt-12">
+        <p class="text-slate-500 text-sm">
+            Designed & Built by Omar Safiullah <br>
+            <a href="mailto:omarsafiullah789@gmail.com"
+                class="text-accent hover:underline mt-2 inline-block">omarsafiullah789@gmail.com</a> • +1 (437) 239-2465
+        </p>
+    </footer>
+
+</body>
+
+</html>
